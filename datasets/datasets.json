@@ -100,6 +100,18 @@
                 "nuclei",
                 "fluorescence"
             ]
+        },
+        "StructConvallaria": {
+            "URL": "https://zenodo.org/records/5160338/files/Struct_Convallaria.zip?download=1",
+            "Description": "Structured Convallaria dataset used in StructN2V paper which contains a stack of 100 images.",
+            "Citation": "Broaddus, C., Krull, A., Weigert, M., Schmidt, U., & Myers, G. (2021). Structured noise Convallaria dataset for structured noise removal benchmark as used in StructN2V paper [Data set]. Zenodo. https://doi.org/10.5281/zenodo.5160338",
+            "License": "CC-BY-4.0",
+            "Hash": "19ed5174c4297aabd7d3d05890ede62174fa00fe5c042df7311e815554ea4f0f",
+            "File size": "134.7 MB",
+            "Tags": [
+                "denoising",
+                "fluorescence"
+            ]
         }
     },
     "denoiseg": {
