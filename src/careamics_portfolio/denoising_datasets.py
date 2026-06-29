@@ -146,9 +146,9 @@ class N2V_SEM(PortfolioEntry):
         super().__init__(
             portfolio=DENOISING,
             name="N2V_SEM",
-            url="https://download.fht.org/jug/n2v/SEM.zip",
+            url="https://zenodo.org/api/records/21028053/files-archive",
             file_name="SEM.zip",
-            sha256="e1999b5d10abb1714b7663463f83d0bfb73990f5e0705b6cd212c4d3e824b96c",
+            sha256="7b432e39cb169cd6d696af1b15c7f34bab440894a0508a3c9847d069bfca8bfe",
             description="Cropped images from a SEM dataset from T.-O. Buchholz et al "
             "(Methods Cell Biol, 2020).",
             license="CC-BY-4.0",
