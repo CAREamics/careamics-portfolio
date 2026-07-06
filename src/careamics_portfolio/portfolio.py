@@ -21,6 +21,7 @@ from .denoising_datasets import (
     N2V_SEM,
     Convallaria,
     Flywing,
+    StructConvallaria,
     Tribolium,
 )
 from .portfolio_entry import PortfolioEntry
@@ -324,6 +325,7 @@ class Denoising(IterablePortfolio):
         self._Convallaria = Convallaria()
         self._CARE_U2OS = CARE_U2OS()
         self._Tribolium = Tribolium()
+        self._StructConvallaria = StructConvallaria()
 
         super().__init__(DENOISING)
 
@@ -414,6 +416,17 @@ class Denoising(IterablePortfolio):
             Tribolium dataset.
         """
         return self._Tribolium
+
+    @property
+    def StructConvallaria(self) -> StructConvallaria:
+        """Structured Convallaria dataset.
+
+        Returns
+        -------
+        StructConvallaria
+            Structured Convallaria dataset.
+        """
+        return self._StructConvallaria
 
 
 @dataclass
