@@ -309,3 +309,42 @@ class Tribolium(PortfolioEntry):
             size=4812.8,
             tags=["denoising", "nuclei", "fluorescence"],
         )
+
+
+class StructConvallaria(PortfolioEntry):
+    """Structured Convallaria dataset.
+
+    Attributes
+    ----------
+        portfolio (str): Name of the portfolio to which the dataset belong.
+        name (str): Name of the dataset.
+        url (str): URL of the dataset.
+        description (str): Description of the dataset.
+        license (str): License of the dataset.
+        citation (str): Citation to use when referring to the dataset.
+        file_name (str): Name of the downloaded file.
+        hash (str): SHA256 hash of the downloaded file.
+        size (int): Size of the dataset in MB.
+        tags (list[str]): List of tags associated to the dataset.
+        is_zip (bool): Whether the dataset is a zip file.
+    """
+
+    def __init__(self) -> None:
+        super().__init__(
+            portfolio=DENOISING,
+            name="StructConvallaria",
+            url="https://zenodo.org/records/5160338/files/Struct_Convallaria.zip?download=1",
+            file_name="Struct_Convallaria.zip",
+            sha256="19ed5174c4297aabd7d3d05890ede62174fa00fe5c042df7311e815554ea4f0f",
+            description=(
+                "Structured Convallaria dataset used in StructN2V "
+                "paper which contains a stack of 100 images."
+            ),
+            license="CC-BY-4.0",
+            citation="Broaddus, C., Krull, A., Weigert, M., Schmidt, U., & Myers, G. "
+            "(2021). Structured noise Convallaria dataset for structured noise removal "
+            "benchmark as used in StructN2V paper [Data set]. Zenodo. "
+            "https://doi.org/10.5281/zenodo.5160338",
+            size=134.7,
+            tags=["denoising", "fluorescence"],
+        )
